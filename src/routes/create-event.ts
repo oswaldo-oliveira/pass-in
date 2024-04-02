@@ -26,7 +26,7 @@ export async function createEvent(app: FastifyInstance) {
 
       const slug = generateSlug(title)
 
-      const eventWithSameSlug = prisma.event.findUnique({
+      const eventWithSameSlug = await prisma.event.findUnique({
         where: { slug },
       })
 
