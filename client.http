@@ -5,18 +5,24 @@ POST {{baseurl}}/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details": "Um evento para quem é apaixonado por programação",
-  "maximumAttendees": 100
+  "title": "New Event",
+  "details": null,
+  "maximumAttendees": 1
 }
 
 ###
 
 # @name register_for_event
-POST {{baseurl}}/events/ef779b42-4b72-4e3d-8390-2b60e49c6b46/attendees
+POST {{baseurl}}/events/35088300-e4ec-4a12-9cbb-74df12f8a318/attendees
 Content-Type: application/json
 
 {
   "name": "Oswaldo Oliveira",
   "email": "oswaldo.oliveira@email.com"
 }
+
+###
+
+# @name get_event
+GET {{baseurl}}/events/35088300-e4ec-4a12-9cbb-74df12f8a318
+
