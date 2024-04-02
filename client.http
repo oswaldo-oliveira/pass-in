@@ -9,3 +9,14 @@ Content-Type: application/json
   "details": "Um evento para quem é apaixonado por programação",
   "maximumAttendees": 100
 }
+
+###
+
+# @name register_for_event
+POST {{baseurl}}/events/ef779b42-4b72-4e3d-8390-2b60e49c6b46/attendees
+Content-Type: application/json
+
+{
+  "name": "Oswaldo Oliveira",
+  "email": "oswaldo.oliveira@email.com"
+}
