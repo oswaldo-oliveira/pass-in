@@ -13,10 +13,5 @@
     "moduleResolution": "node16"
   },
 
-  "include": ["src"],
-
-  "baseUrl": "./",
-  "paths": {
-    "@/*": ["./src/*"]
-  }
+  "include": ["src"]
 }
