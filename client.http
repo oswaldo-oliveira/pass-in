@@ -13,18 +13,18 @@ Content-Type: application/json
 ###
 
 # @name register_for_event
-POST {{baseurl}}/events/35088300-e4ec-4a12-9cbb-74df12f8a318/attendees
+POST {{baseurl}}/events/ef779b42-4b72-4e3d-8390-2b60e49c6b46/attendees
 Content-Type: application/json
 
 {
-  "name": "Oswaldo Oliveira",
-  "email": "oswaldo.oliveira@email.com"
+  "name": "Victoria Larissa",
+  "email": "victoria.larissa@email.com"
 }
 
 ###
 
 # @name get_event
-GET {{baseurl}}/events/35088300-e4ec-4a12-9cbb-74df12f8a318
+GET {{baseurl}}/events/ef779b42-4b72-4e3d-8390-2b60e49c6b46
 
 ###
 
@@ -35,4 +35,9 @@ GET {{baseurl}}/attendees/2/badge
 
 # @name check_in
 GET {{baseurl}}/attendees/2/check-in
+
+###
+
+# @name get_event_attendees
+GET {{baseurl}}/events/ef779b42-4b72-4e3d-8390-2b60e49c6b46/attendees?query=victoria
 
