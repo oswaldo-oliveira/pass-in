@@ -31,3 +31,8 @@ GET {{baseurl}}/events/35088300-e4ec-4a12-9cbb-74df12f8a318
 # @name get_attendee_badge
 GET {{baseurl}}/attendees/2/badge
 
+###
+
+# @name check_in
+GET {{baseurl}}/attendees/2/check-in
+
